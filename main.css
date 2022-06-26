@@ -1,0 +1,75 @@
+:root {
+    --blocks-gap: 20px
+}
+
+body {
+    background-color: #000;
+    max-width: 1000px;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: calc(var(--blocks-gap) * 2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 52px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.container {
+    min-width: 100%;
+    background-color: #fff;
+    padding: var(--blocks-gap);
+}
+
+.inner {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--blocks-gap);
+}
+
+.first {
+    display: flex;
+    gap: var(--blocks-gap);
+    padding: var(--blocks-gap);
+    background-color: #888;
+}
+
+.first>.inner {
+    background-color: rosybrown;
+}
+
+.second {
+    flex-grow: 2;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.second>.inner {
+    background-color: greenyellow;
+}
+
+.third {
+    flex-grow: 2;
+    display: flex;
+    gap: 20px;
+}
+
+.third>.inner {
+    background-color: plum;
+}
+
+.fourth {
+    flex-grow: 1;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.fourth>.inner {
+    background-color: mediumaquamarine;
+}
